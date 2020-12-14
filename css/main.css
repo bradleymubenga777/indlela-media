@@ -3,10 +3,12 @@ COLORS
 primary: rgb(14, 59, 94);
 secondary: rgb(90, 119, 187)
 */
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -18,11 +20,23 @@ h4, h5, h6{
     font-weight: 700;
 }
 
+a{
+    color:rgb(127, 198, 252);
+}
+
+a:hover{
+    text-decoration: none;
+    color:rgb(177, 198, 248) !important;
+}
+
+.whiteText{
+    color: white !important;
+}
 /*Buttons*/
 .btn-outline-secondary{
     background-color: transparent !important;
-    border-color: rgb(194, 205, 231) !important;
-    color: rgb(221, 234, 252) !important;
+    border-color: rgb(235, 241, 255) !important;
+    color: rgb(255, 255, 255) !important;
     border-radius: 0;
     position: relative;
 }
@@ -222,4 +236,33 @@ label{
   /* Set a background color that will be displayed
      while the background image is loading */
   background-color: #464646;
+}
+
+/*Sign Up PAGE*/
+.signInBg{
+      /* Location of the image */
+  background-image: url('../img/bordMembers.jpg');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+.overflowHidden{
+    overflow: hidden;
+    color: rgb(221, 234, 252) !important;
 }
