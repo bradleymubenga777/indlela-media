@@ -1,0 +1,225 @@
+/*
+COLORS
+primary: rgb(14, 59, 94);
+secondary: rgb(90, 119, 187)
+*/
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1, h2, h3{
+    font-weight:900;
+}
+
+h4, h5, h6{
+    font-weight: 700;
+}
+
+/*Buttons*/
+.btn-outline-secondary{
+    background-color: transparent !important;
+    border-color: rgb(194, 205, 231) !important;
+    color: rgb(221, 234, 252) !important;
+    border-radius: 0;
+    position: relative;
+}
+
+.btn-outline-secondary::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(90, 119, 187);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-outline-secondary:hover:before{
+    width: 100%;
+}
+
+.btn-outline-secondary:hover{
+    color: rgb(255, 255, 255) !important;  
+}
+
+.btn-secondary{
+    background: rgb(14, 59, 94) !important;
+    border-radius: 0;
+    border-color: rgb(90, 119, 187) !important;
+}
+
+.btn-secondary:hover{
+    color: rgb(90, 119, 187) !important;
+}
+
+
+.btn-primary{
+    background: rgb(90, 119, 187) !important;
+    border-radius: 0;
+    border-color: rgb(90, 119, 187) !important;
+    color: white !important;
+}
+
+.btn-primary:hover{
+    background: rgb(14, 59, 94) !important; /*Change to dark blue section background*/
+    color: rgb(90, 119, 187) !important;
+}
+
+
+/*Navbar*/
+
+.navbar{
+    background: rgb(14, 59, 94);
+    border-bottom: 0.25px solid rgb(90, 119, 187) ;
+}
+
+.nav-link{
+    color: rgb(221, 234, 252) !important;
+}
+
+.nav-link:hover{
+    color: rgb(159, 215, 248) !important;
+}
+
+/*Home*/
+.home-content{
+    overflow: hidden;
+    color: rgb(221, 234, 252) !important;
+}
+
+/*Call To Action*/
+.call-to-action{
+    background: rgb(14, 59, 94);
+    color: white;
+}
+
+.heading-line{
+    height: 3px;
+    width: 10%;
+    background: rgb(90, 119, 187);
+}
+
+/*Services*/
+.services i{
+    font-size: 2rem;
+    color: rgb(90, 119, 187);
+}
+
+/*Portfolio*/
+
+.dark{
+    color:rgb(210, 223, 255);
+    background: rgb(14, 59, 94);
+}
+
+.lighterr{
+    color:rgb(210, 223, 255);
+    background: rgb(90, 119, 187);
+}
+
+.dark i {
+    font-size: 1.3rem;
+    color: rgb(90, 119, 187);
+}
+
+.portfolio .col-lg-3{
+    position: relative;
+}
+
+.filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(90, 119, 187);
+    opacity: 0.8;
+}
+
+.filter2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(14, 59, 94);
+    opacity: 0.8;
+}
+
+/*Contact Us*/
+.contact{
+    color: white;
+
+    /* Location of the image */
+  background-image: url('../img/contactBg.jpg');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+label{
+    font-size: large;
+    font-weight: 700;
+}
+
+/*Footer*/
+.footer{
+    background:rgb(14, 59, 94);
+    color: white;
+}
+
+.footer a{
+    color: white;
+}
+
+/*Responsive*/
+@media(max-width: 900px){
+    .navbar .nav-item{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .call-to-action .container{
+        width: 100% !important;
+    }
+}
+
+.homeMobile{
+  /* Location of the image */
+  background-image: url('../img/bordMembers.jpg');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
