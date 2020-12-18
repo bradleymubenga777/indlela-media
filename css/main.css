@@ -248,7 +248,7 @@ label{
     font-weight: 700 !important;
 }
 
-input{
+input, select{
     background-color: rgb(223, 231, 250) !important;
     border-radius: 0 !important;
     border-color: white !important;
@@ -272,6 +272,10 @@ textarea{
     color: white !important;
 }
 
+.borderTop{
+    border-top: 0.25px solid rgb(90, 119, 187) !important;
+}
+
 /*Responsive*/
 @media(max-width: 900px){
     .navbar .nav-item{
@@ -290,7 +294,7 @@ textarea{
 /*Sign Up PAGE*/
 .signInBg{
       /* Location of the image */
-  background-image: url('../img/bordMembers.jpg') !important;
+      background:rgb(14, 59, 94) !important;
   
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center !important;
@@ -308,7 +312,29 @@ textarea{
   
   /* Set a background color that will be displayed
      while the background image is loading */
-  background-color: #464646 !important;
+}
+
+/*Login PAGE*/
+.logInBg{
+    /* Location of the image */
+    background:rgb(14, 59, 94) !important;
+
+/* Background image is centered vertically and horizontally at all times */
+background-position: center center !important;
+
+/* Background image doesn't tile */
+background-repeat: no-repeat !important;
+
+/* Background image is fixed in the viewport so that it doesn't move when 
+   the content's height is greater than the image's height */
+background-attachment: fixed !important;
+
+/* This is what makes the background image rescale based
+   on the container's size */
+background-size: cover !important;
+
+/* Set a background color that will be displayed
+   while the background image is loading */
 }
 
 .overflowHidden{
