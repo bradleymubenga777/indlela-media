@@ -1,0 +1,386 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/*
+COLORS
+primary: rgb(14, 59, 94);
+secondary: rgb(90, 119, 187)
+*/
+html{
+    scroll-behavior: smooth ;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    overflow-x: hidden ;
+}
+
+h1, h2, h3{
+    font-weight:900 ;
+}
+
+h4, h5, h6{
+    font-weight: 700 ;
+}
+
+a{
+    color:rgb(127, 198, 252) ;
+}
+
+a:hover{
+    text-decoration: none ;
+    color:rgb(177, 198, 248) ;
+}
+
+.whiteText{
+    color: white ;
+}
+/*Buttons*/
+.btn-outline-secondary{
+    background-color: transparent ;
+    border-color: rgb(235, 241, 255) ;
+    color: rgb(255, 255, 255) ;
+    border-radius: 0;
+    position: relative;
+}
+
+.btn-outline-secondary::before{
+    content: "";
+    position: absolute ;
+    background-color: rgb(90, 119, 187) ;
+    top: 0 ;
+    left: 0 ;
+    height: 100% ;
+    width: 0% ;
+    z-index: -1 ;
+    transition: 0.5s ;
+}
+
+.btn-outline-secondary:hover{
+    background-color: rgb(14, 59, 94);
+}
+
+.btn-outline-secondary:hover:before{
+    width: 100% ;
+}
+
+.btn-outline-secondary:hover{
+    color: rgb(255, 255, 255) ;
+    border-color: rgb(90, 119, 187) ;  
+}
+
+.btn-secondary{
+    background: rgb(14, 59, 94) ;
+    border-radius: 0;
+    border-color: rgb(90, 119, 187) ;
+}
+
+.btn-secondary:hover{
+    color: rgb(90, 119, 187) ;
+    background-color: rgb(14, 59, 94);
+    border-color: rgb(235, 241, 255) ;
+}
+
+
+.btn-primary{
+    background: rgb(90, 119, 187) ;
+    border-radius: 0;
+    border-color: rgb(90, 119, 187) ;
+    color: white ;
+}
+
+.btn-primary:hover{
+    background: rgb(14, 59, 94) ; /*Change to dark blue section background*/
+    color: rgb(90, 119, 187) ;
+}
+
+
+/*Navbar*/
+
+.navbar{
+    background: rgb(14, 59, 94) ;
+    border-bottom: 0.25px solid rgb(90, 119, 187) ;
+}
+
+.lightBURGER{
+    border-color: white ;
+}
+
+.nav-link{
+    color: rgb(221, 234, 252) ;
+}
+
+.nav-link:hover{
+    color: rgb(159, 215, 248) ;
+}
+
+/*Home*/
+.home{
+    background-color: rgb(14, 59, 94) ;
+}
+
+.home-content{
+    overflow: hidden;
+    color: rgb(221, 234, 252) ;
+}
+
+/*Call To Action*/
+.homeMobile{
+    /* Location of the image */
+    background-image: url('../img/bordMembers.jpg') ;
+    
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center ;
+    
+    /* Background image doesn't tile */
+    background-repeat: no-repeat ;
+    
+    /* Background image is fixed in the viewport so that it doesn't move when 
+       the content's height is greater than the image's height */
+    background-attachment: fixed ;
+    
+    /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover ;
+    
+    /* Set a background color that will be displayed
+       while the background image is loading */
+    background-color: #464646 ;
+}
+
+.call-to-action{
+    color: white ;
+}
+
+.heading-line{
+    height: 3px ;
+    width: 10% ;
+    background: rgb(90, 119, 187) ;
+}
+
+/*Products & Services*/
+
+.hoverCard {
+    background: #fff ;
+    border-radius: 2px ;
+}  
+
+.hoverCard-1 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) ;
+}
+
+.hoverCard-1:hover {
+    transition: 0.5s ;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23) ;
+}
+
+/*Portfolio*/
+
+.dark{
+    color:rgb(210, 223, 255) ;
+    background: rgb(14, 59, 94) ;
+}
+
+.lighterr{
+    color:rgb(210, 223, 255) ;
+    background: rgb(90, 119, 187) ;
+}
+
+.dark i {
+    font-size: 1.3rem ;
+    color: rgb(90, 119, 187) ;
+}
+
+.portfolio .col-lg-3{
+    position: relative ;
+}
+
+.filter{
+    position: absolute ;
+    width: 100% ;
+    height: 100% ;
+    background: rgb(90, 119, 187) ;
+    opacity: 0.8 ;
+}
+
+.filterPic2{
+    position: absolute ;
+    width: 100% ;
+    height: 100%;
+    background: rgb(14, 59, 94) ;
+    opacity: 0.4 ;
+}
+
+.filter2{
+    position: absolute ;
+    width: 100% ;
+    height: 100% ;
+    background: rgb(14, 59, 94) ;
+    opacity: 0.8 ;
+}
+
+/*Contact Us*/
+.contact{
+    color: white ;
+
+    /* Location of the image */
+  background-image: url('../img/contactBg.jpg') ;
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center ;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat ;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed ;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover ;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646 ;
+}
+
+.bigContact{
+    font-size: larger ;
+}
+
+.bigContact a{
+    color: white ;
+}
+
+label{
+    font-size: large ;
+    font-weight: 700 ;
+}
+
+input, select{
+    background-color: rgb(223, 231, 250) ;
+    border-radius: 0px;
+    border-color: white ;
+    box-shadow: 2px 2px 5px rgb(93, 141, 255), 0 6px 6px rgba(0,0,0,0.23) ;
+}
+
+textarea{
+    background-color: rgb(223, 231, 250) ;
+    border-radius: 0px;
+    border-color: white ;
+    box-shadow: 2px 2px 5px rgb(93, 141, 255), 0 6px 6px rgba(0,0,0,0.23) ;
+}
+
+/*Footer*/
+.footer{
+    background:rgb(14, 59, 94) ;
+    color: white ;
+}
+
+.footer a{
+    color: white ;
+}
+
+.borderTop{
+    border-top: 0.25px solid rgb(90, 119, 187) ;
+}
+
+/*Responsive*/
+@media(max-width: 900px){
+    .navbar .nav-item{
+        display: block;
+        width: 100% ;
+        padding: 10px 0px ;
+        text-align: center ;
+    }
+    .call-to-action .container{
+        width: 100% ;
+    }
+}
+
+
+
+/*Sign Up PAGE*/
+.signInBg{
+      /* Location of the image */
+      background:rgb(14, 59, 94) ;
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center ;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat ;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed ;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover ;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+}
+
+/*Login PAGE*/
+.logInBg{
+    /* Location of the image */
+    background:rgb(14, 59, 94) ;
+
+/* Background image is centered vertically and horizontally at all times */
+background-position: center center ;
+
+/* Background image doesn't tile */
+background-repeat: no-repeat ;
+
+/* Background image is fixed in the viewport so that it doesn't move when 
+   the content's height is greater than the image's height */
+background-attachment: fixed ;
+
+/* This is what makes the background image rescale based
+   on the container's size */
+background-size: cover ;
+
+/* Set a background color that will be displayed
+   while the background image is loading */
+}
+
+.overflowHidden{
+    overflow: hidden ;
+    color: rgb(221, 234, 252) ;
+}
+
+
+/*Dasboard Styles*/
+
+.leftColumn{
+    color: white;
+
+    background: rgb(14, 59, 94);
+    /* sidebar shadow */
+
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+}
+
+.logoTopBar{
+    border-bottom: 0.25px solid rgb(90, 119, 187) ;
+}
+
+.circleImg{
+    border-radius: 25%;
+}
+
+.dashEmail{
+    color: rgb(162, 164, 167);
+    font-size: small;
+}
+
+.dashLink a{
+    color: rgb(183, 202, 248);
+    transition: 0.3s ease-in-out;
+}
+
+.dashLink a:hover{
+    color: white;
+}

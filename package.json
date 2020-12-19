@@ -1,0 +1,22 @@
+{
+  "name": "indlela-media",
+  "version": "1.0.0",
+  "description": "<h1>About</h1>\r Repository for the Indlela Media platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradleymubenga777/indlela-media.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradleymubenga777/indlela-media/issues"
+  },
+  "homepage": "https://github.com/bradleymubenga777/indlela-media#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
