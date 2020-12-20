@@ -10814,6 +10814,7 @@ html {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
+  background-color: #dfe7fa !important;
 }
 
 h1, h2, h3 {
@@ -10839,72 +10840,72 @@ a:hover {
 
 /*Buttons*/
 .btn-outline-secondary {
-  background-color: transparent;
-  border-color: #ebf1ff;
-  color: white;
-  border-radius: 0;
-  position: relative;
+  background-color: transparent !important;
+  border-color: #ebf1ff !important;
+  color: white !important;
+  border-radius: 0 !important;
+  position: relative !important;
 }
 
 .btn-outline-secondary::before {
   content: "";
-  position: absolute;
-  background-color: #5a77bb;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0%;
-  z-index: -1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  position: absolute !important;
+  background-color: #5a77bb !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+  width: 0% !important;
+  z-index: -1 !important;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
 }
 
 .btn-outline-secondary:hover {
-  background-color: #0e3b5e;
+  background-color: #0e3b5e !important;
 }
 
 .btn-outline-secondary:hover:before {
-  width: 100%;
+  width: 100% !important;
 }
 
 .btn-outline-secondary:hover {
-  color: white;
-  border-color: #5a77bb;
+  color: white !important;
+  border-color: #5a77bb !important;
 }
 
 .btn-secondary {
-  background: #0e3b5e;
-  border-radius: 0;
-  border-color: #5a77bb;
+  background: #0e3b5e !important;
+  border-radius: 0 !important;
+  border-color: #5a77bb !important;
 }
 
 .btn-secondary:hover {
-  color: #5a77bb;
-  background-color: #0e3b5e;
-  border-color: #ebf1ff;
+  color: #5a77bb !important;
+  background-color: #0e3b5e !important;
+  border-color: #ebf1ff !important;
 }
 
 .btn-primary {
-  background: #5a77bb;
-  border-radius: 0;
-  border-color: #5a77bb;
-  color: white;
+  background: #5a77bb !important;
+  border-radius: 0 !important;
+  border-color: #5a77bb !important;
+  color: white !important;
 }
 
 .btn-primary:hover {
-  background: #0e3b5e;
+  background: #0e3b5e !important;
   /*Change to dark blue section background*/
-  color: #5a77bb;
+  color: #5a77bb !important;
 }
 
 /*Navbar*/
 .navbar {
   background: #0e3b5e;
-  border-bottom: 0.25px solid #5a77bb;
+  border-bottom: 0.25px solid #5a77bb !important;
 }
 
 .lightBURGER {
-  border-color: white;
+  border-color: white !important;
 }
 
 .nav-link {
@@ -11045,24 +11046,24 @@ a:hover {
 }
 
 label {
-  font-size: large;
-  font-weight: 700;
+  font-size: large !important;
+  font-weight: 700 !important;
 }
 
 input, select {
-  background-color: #dfe7fa;
-  border-radius: 0px;
-  border-color: white;
-  -webkit-box-shadow: 2px 2px 5px #5d8dff, 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 2px 2px 5px #5d8dff, 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: #dfe7fa !important;
+  border-radius: 0px !important;
+  border-color: white !important;
+  -webkit-box-shadow: 2px 2px 5px #5d8dff, 0 6px 6px rgba(0, 0, 0, 0.23) !important;
+          box-shadow: 2px 2px 5px #5d8dff, 0 6px 6px rgba(0, 0, 0, 0.23) !important;
 }
 
 textarea {
-  background-color: #dfe7fa;
-  border-radius: 0px;
-  border-color: white;
-  -webkit-box-shadow: 2px 2px 5px #5d8dff, 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 2px 2px 5px #5d8dff, 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: #dfe7fa !important;
+  border-radius: 0px !important;
+  border-color: white !important;
+  -webkit-box-shadow: 2px 2px 5px #5d8dff, 0 6px 6px rgba(0, 0, 0, 0.23) !important;
+          box-shadow: 2px 2px 5px #5d8dff, 0 6px 6px rgba(0, 0, 0, 0.23) !important;
 }
 
 /*Footer*/
@@ -11138,8 +11139,12 @@ textarea {
   color: white;
   background: #0e3b5e;
   /* sidebar shadow */
-  -webkit-box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
-          box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 6px 0px 18px rgba(27, 27, 27, 0.5);
+          box-shadow: 6px 0px 18px rgba(27, 27, 27, 0.5);
+}
+
+.navbar-brand {
+  background-color: #0e3b5e !important;
 }
 
 .logoTopBar {
@@ -11161,7 +11166,129 @@ textarea {
   transition: 0.3s ease-in-out;
 }
 
+.dashLink a.active {
+  color: white !important;
+}
+
 .dashLink a:hover {
   color: white;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+   * Sidebar
+   */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  /* Behind the navbar */
+  padding: 48px 0 0;
+  /* Height of navbar */
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+   * Navbar
+   */
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+.rectangleOne {
+  height: 27rem;
+  color: white;
+  background: #0e3b5e;
+  /* sidebar shadow */
+  -webkit-box-shadow: 6px 0px 18px rgba(27, 27, 27, 0.5);
+          box-shadow: 6px 0px 18px rgba(27, 27, 27, 0.5);
+}
+
+.rectangleTwo {
+  height: 12rem;
+  color: white;
+  background: #0e3b5e;
+  /* sidebar shadow */
+  -webkit-box-shadow: 6px 0px 18px rgba(27, 27, 27, 0.5);
+          box-shadow: 6px 0px 18px rgba(27, 27, 27, 0.5);
 }
 /*# sourceMappingURL=main.css.map */
