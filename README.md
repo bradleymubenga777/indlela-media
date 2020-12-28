@@ -6,4 +6,4 @@ Front-End Development by <a href="https://bradleymubenga777.github.io">Bradley M
 
 # Challenges & Accomplishments
 - Built a custom-made theme with Bootstrap and used the Grid system to create a responsive dashboard.
-- Challenges include creating an easy to use UI and creating good UX experience.
+- Challenges included creating an easy to use UI and creating good UX experience.
