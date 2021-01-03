@@ -10929,7 +10929,7 @@ a:hover {
 /*Call To Action*/
 .homeMobile {
   /* Location of the image */
-  background-image: url("../img/bordMembers.jpg");
+  background-image: url('../img/bordMembers.jpg');
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
   /* Background image doesn't tile */
@@ -11021,7 +11021,7 @@ a:hover {
 .contact {
   color: white;
   /* Location of the image */
-  background-image: url("../img/contactBg.jpg");
+  background-image: url('../img/contactBg.jpg');
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
   /* Background image doesn't tile */

@@ -127,7 +127,7 @@ a:hover{
 /*Call To Action*/
 .homeMobile{
     /* Location of the image */
-    background-image: url('../img/bordMembers.jpg') ;
+    background-image: url('../img/bordMembers.jpg') !important;
     
     /* Background image is centered vertically and horizontally at all times */
     background-position: center center ;
@@ -142,10 +142,6 @@ a:hover{
     /* This is what makes the background image rescale based
        on the container's size */
     background-size: cover ;
-    
-    /* Set a background color that will be displayed
-       while the background image is loading */
-    background-color: #464646 ;
 }
 
 .call-to-action{
@@ -224,7 +220,7 @@ a:hover{
     color: white ;
 
     /* Location of the image */
-  background-image: url('../img/contactBg.jpg') ;
+  background-image: url('../img/contactBg.jpg') !important;
   
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center ;
@@ -239,10 +235,7 @@ a:hover{
   /* This is what makes the background image rescale based
      on the container's size */
   background-size: cover ;
-  
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  background-color: #464646 ;
+
 }
 
 .bigContact{
