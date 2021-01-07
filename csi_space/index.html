@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="../js/canvasjs.min.js"></script>
+    <script src="../js/jquery.canvasjs.min.js"></script>
+    <script src="../js/canvasScript.js"></script>
 
     <title>CSI Space</title>
   </head>
@@ -57,7 +60,7 @@
                             </div>
 
                             <div class="dashLink pb-3">
-                                <a href="#">
+                                <a href="#csiNetwork">
                                     <i class="fa fa-comments-o mr-1"></i>CSI Network
                                 </a>
                             </div>
@@ -105,52 +108,31 @@
               </nav>
           
               <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 p">
-                <div class="container d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                  <h1 class="h2">Dashboard</h1>
+                <div class="pb-2 mb-3">
                 </div>
 
                 <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 m-2 rectangleOne">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2 rectangleOne">
                             <div class="statOne container">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo optio cupiditate quibusdam provident deleniti animi aliquam sunt dolorem sequi nisi, eaque itaque praesentium fuga doloribus saepe officiis laborum minus obcaecati dicta rerum repellat pariatur incidunt modi? Recusandae eius expedita unde sequi perspiciatis, consequuntur dolorum similique tempora corporis perferendis asperiores modi fuga libero cum, reprehenderit voluptatem qui architecto. Odit voluptate velit similique illum tempora nihil iusto explicabo aperiam. Eveniet quasi voluptatibus modi fugiat hic illo? Quod temporibus, nam, ab magnam aut quo quos nesciunt minus esse dolorum dolorem inventore facere. Quam earum, eos at saepe quod sint aliquam iusto eligendi fuga.
-                            </div>
+                                <h3 class="pt-3 text-center">Welcome!</h3>
+                                <p>CSI Space creates an environment where Non-profit organisations find fast, easy and reliable access to funding and connect Corporate funders to relevant organisations at the same time. Upgrade to our premium package and get access to unlimited Funders and sponshorship requests. 
+                                </p>
 
-                            <div class="statOne container mt-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo optio cupiditate quibusdam provident deleniti animi aliquam sunt dolorem sequi nisi, eaque itaque praesentium fuga doloribus saepe officiis laborum minus obcaecati dicta rerum repellat pariatur incidunt modi? Recusandae eius expedita unde sequi perspiciatis, consequuntur dolorum similique tempora corporis perferendis asperiores modi fuga libero cum
-                            </div>
-                        </div>
-  
-                        <div class="container-fluid col-sm-12 col-md-12 col-lg-4 m-2 col-xl-4">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-12 m-2 rectangleTwo ">
-                                </div>
+                                <div class="conntainer pb-3">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <img width="250rem"  src="../img/signUp.svg">
+                                        </div>
 
-                                <div class="col-12 m-2 rectangleTwo">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </main>
+                                        <div class="col-6 text-center">
+                                            <button class="btn btn-lg btn-primary">Upgrade</button>
+                                        </div>
 
-              <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 pt-5" id="fundingRequest">
-                <div class="container d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                  <h1 class="h2">Dashboard</h1>
-                </div>
-
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 m-2 rectangleOne">
-                            
-                        </div>
-  
-                        <div class="container-fluid col-sm-12 col-md-12 col-lg-4 m-2 col-xl-4">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-12 m-2 rectangleTwo ">
-                                </div>
-
-                                <div class="col-12 m-2 rectangleTwo">
+                                        <div class="col-6 text-center">
+                                          <button class="btn btn-lg btn-primary">Upgrade</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -158,26 +140,110 @@
                 </div>
               </main>
 
-              <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 pt-5" id="fundingRequest">
-                <div class="container d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                  <h1 class="h2">Dashboard</h1>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 pt-5" id="csiNetwork">
+                <div class="pb-2 mb-3">
                 </div>
 
                 <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 m-2 rectangleOne">
-                            
+                    <div class="row d-flex justify-content-center align-items-center">
+
+                        <div class="container-fluid col-sm-12 col-md-12 col-lg-3 m-2 col-xl-3">
+                          <div class="row ">
+                              <div class="col-12 m-2 rectangleTwo d-flex flex-column justify-content-center align-items-center p-3">
+                                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                              </div>
+
+                              <div class="col-12 m-2 rectangleTwo">
+                                <p>Upgrade To View</p>
+                              </div>
+                          </div>
                         </div>
-  
-                        <div class="container-fluid col-sm-12 col-md-12 col-lg-4 m-2 col-xl-4">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-12 m-2 rectangleTwo ">
+
+                        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 m-2 rectangleOne">
+                            <div class="p-3">
+                              <h5 class="border-bottom border-gray pb-2 mb-4 mb-0">Recent updates (Badge With Updates Number)</h5>
+
+                                <div class="media text-muted pt-3 d-flex flex-column p-3 statOne ">
+                                  <div class="d-flex flex-row justify-content-center">
+                                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="/007bff"></rect><text x="50%" y="50%" fill="/007bff" dy=".3em">32x32</text></svg>
+                                    <p class="media-body pb-3 mb-0 small lh-125  border-gray whiteText">
+                                      <strong class="d-block whiteText">Company Name</strong>
+                                      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                    </p>
+                                  </div>
+
+                                  <a href="/">
+                                    <button class="btn btn-sm btn-primary">More</button>
+                                  </a>
                                 </div>
 
-                                <div class="col-12 m-2 rectangleTwo">
+
+                                <div class="media text-muted pt-3 mt-2 d-flex flex-column p-3 statOne ">
+                                  <div class="d-flex flex-row justify-content-center">
+                                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="/007bff"></rect><text x="50%" y="50%" fill="/2ssbff" dy=".3em">32x32</text></svg>
+                                    <p class="media-body pb-3 mb-0 small lh-125  border-gray whiteText">
+                                      <strong class="d-block whiteText">Company Name</strong>
+                                      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                    </p>
+                                  </div>
+
+                                  <a href="/">
+                                    <button class="btn btn-sm btn-primary">More</button>
+                                  </a>
                                 </div>
+
+                                <small class="d-block text-right mt-3">
+                                  <a href="/">
+                                    <button class="btn btn-primary">All updates</button>
+                                  </a>
+                                </small>
                             </div>
                         </div>
+
+                    </div>
+                </div>
+              </main>
+
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 pt-5" id="csiNetwork">
+                <div class="container d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                  <h1 class="h2">Funding Requests</h1>
+                </div>
+
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center">
+
+                        <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 m-2 rectangleOne">
+                            <div class="p-3">
+                              <h5 class="border-bottom border-gray pb-2 mb-4 mb-0">Recent updates</h5>
+
+                                <div class="media text-muted pt-3 d-flex flex-column p-3 statOne ">
+                                  <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="/007bff"></rect><text x="50%" y="50%" fill="/007bff" dy=".3em">32x32</text></svg>
+                                  <p class="media-body pt-1 pb-3 mb-0 small lh-125  border-gray whiteText">
+                                    <strong class="d-block whiteText">Company Name</strong>
+                                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                  </p>
+
+                                  <a href="/">
+                                    <button class="btn btn-sm btn-primary">More</button>
+                                  </a>
+                                </div>
+
+                                <small class="d-block text-right mt-3">
+                                  <a href="/">
+                                    <button class="btn btn-primary">All updates</button>
+                                  </a>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid col-sm-12 col-md-12 col-lg-4 m-2 col-xl-4">
+                          <div class="row ">
+                              <div class="col-12 m-2 rectangleTwo d-flex flex-column justify-content-center align-items-center p-3">
+                                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                              </div>
+                          </div>
+                        </div>
+
                     </div>
                 </div>
               </main>
