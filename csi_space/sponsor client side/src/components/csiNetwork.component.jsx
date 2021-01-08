@@ -13,7 +13,7 @@ export default function csiNetwork() {
                         <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2 rectangleOne">
                             <div className="p-3 ">
                                 <h5 className="border-bottom border-gray pb-2 mb-0">Grant Listings <span class="badge badge-pill badge-info">3</span></h5>
-                                <button className="btn btn-primary mt-2 text-right"><i className="fa fa-plus"></i> New Listing</button>
+                                <NavLink to="/listingRequestId" className="btn btn-primary mt-2 text-right"><i className="fa fa-plus"></i> New Listing</NavLink>
 
                                 <div className="media text-muted pt-3 mt-2 statOne ">
                                   <img src="" alt="" />
