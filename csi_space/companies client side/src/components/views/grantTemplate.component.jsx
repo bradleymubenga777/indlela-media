@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 export default function grantTemplate() {
     return (
@@ -24,9 +25,9 @@ export default function grantTemplate() {
                                   </ul>
 
                                   <small class="d-block text-left mt-3 container">
-                                    <a href="/">
+                                    <NavLink to="/applyUniqueId">
                                       <button class="btn btn-primary">Request Funding</button>
-                                    </a>
+                                    </NavLink>
                                   </small>
                                 </div>
 

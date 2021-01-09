@@ -9,6 +9,7 @@ import FundingRequests from './components/fundingRequest.compoent'
 import CsiNetwork from './components/csiNetwork.component'
 import MyProfile from './components/myProfile.component'
 import GrantTemplate from './components/views/grantTemplate.component'
+import ApplyForListing from './components/views/applyForListing.component'
 import './font-awesome/css/font-awesome.min.css'
 
 class App extends Component{
@@ -28,6 +29,7 @@ class App extends Component{
                     <Route exact path="/csiNetwork" component={CsiNetwork} />
                     <Route exact path="/myProfile" component={MyProfile} />
                     <Route exact path="/grantUniqueId" component={GrantTemplate} />
+                    <Route exact path="/applyUniqueId" component={ApplyForListing} />
                 </div>
             </div>
 
