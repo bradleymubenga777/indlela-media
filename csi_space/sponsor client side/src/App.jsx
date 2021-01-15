@@ -10,6 +10,7 @@ import FundingRequests from './components/fundingRequest.compoent'
 import CsiNetwork from './components/csiNetwork.component'
 import MyProfile from './components/myProfile.component'
 import GrantTemplate from './components/views/grantTemplate.component'
+import ApplicationTemplate from './components/views/applicationTemplate.component'
 import listingRequest from './components/views/listingRequest.component'
 
 class App extends Component{
@@ -23,13 +24,13 @@ class App extends Component{
             <div class="container-fluid">
                 <div class="row">
                     <SideBar />
-                    <Route exact path="/sponsor"  component={WelcomePage} />
+                    <Route exact path="/"  component={WelcomePage} />
                     <Route exact path="/sdashboard" component={Dashboard} />
                     <Route exact path="/fundingRequests" component={FundingRequests} />
                     <Route exact path="/sgrantListing" component={CsiNetwork} />
                     <Route exact path="/smyProfile" component={MyProfile} />
                     <Route exact path="/grantListTemplate" component={GrantTemplate} />
-                    <Route exact path="/grantListTemplate" component={GrantTemplate} />
+                    <Route exact path="/applicationListTemplate" component={ApplicationTemplate} />
                     <Route exact path="/listingRequestId" component={listingRequest} />
                 </div>
             </div>

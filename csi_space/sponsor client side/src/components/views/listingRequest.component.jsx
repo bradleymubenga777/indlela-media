@@ -6,9 +6,9 @@ export default function listingRequest() {
 
         <div className="container">
             <div className="row d-flex justify-content-center align-items-center">
-                <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2 rectangleOne">
-                    <form className="p-3 statOne ">
-                        <h4 className="mb-0 whiteText">Create a new listing</h4>
+                <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2">
+                    <form className="p-3 statOne blackText">
+                        <h4 className="mb-0 blackText">Create a new listing</h4>
 
                         <div className="pt-4 w-75 ">
                           <h6>Name Of Listing:</h6>
