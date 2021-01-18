@@ -10,7 +10,7 @@ export default function welcome() {
 
                 <div class="container">
                     <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2 rectangleOne">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2">
                             <div class="statOne container">
                                 <h3 class="pt-3 text-center">Welcome!</h3>
                                 <p>Here is to changing the world! CSI Space creates an environment where Non-profit organisations find fast, easy and reliable access to funding and connect Corporate funders to relevant organisations at the same time. Upgrade to our premium package and get access to unlimited Funders and sponshorship requests. 

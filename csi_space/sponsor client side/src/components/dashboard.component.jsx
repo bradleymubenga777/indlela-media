@@ -20,14 +20,14 @@ export default function dashboard() {
                 </div>
               </div>
 
-              <div className="col-sm-12 col-md-12 col-lg-8 col-xl-8 m-2 rectangleOne">
+              <div className="col-sm-12 col-md-12 col-lg-8 col-xl-8 m-2">
                   <div className="p-3">
-                    <h5 className="border-bottom border-gray pb-2 mb-4 mb-0">Active Listings <span className="badge badge-pill badge-info">2</span></h5>
+                    <h5 className="border-bottom border-gray pb-2 mb-4 mb-0 blackText">Active Listings <span className="badge badge-pill badge-info">2</span></h5>
 
                       <div className="media text-muted pt-3 d-flex flex-column p-3 statOne ">
                         <div className="d-flex flex-row justify-content-center">
-                          <p className="media-body pb-3 mb-0 small lh-125  border-gray whiteText">
-                            <strong className="d-block whiteText">Big Shot Investments</strong>
+                          <p className="media-body pb-3 mb-0 small lh-125  border-gray blackText">
+                            <strong className="d-block blackText">Big Shot Investments</strong>
                             We are looking for a small business with a passion of A, B & C and who are well rounded with D, E & F. Requirements are A, B , AC ,DD, VE...
                           </p>
                         </div>
@@ -40,8 +40,8 @@ export default function dashboard() {
 
                       <div className="media text-muted pt-3 mt-2 d-flex flex-column p-3 statOne ">
                         <div className="d-flex flex-row justify-content-center">
-                          <p className="media-body pb-3 mb-0 small lh-125  border-gray whiteText">
-                            <strong className="d-block whiteText">Company Name</strong>
+                          <p className="media-body pb-3 mb-0 small lh-125  border-gray blackText">
+                            <strong className="d-block blackText">Company Name</strong>
                             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
                           </p>
                         </div>

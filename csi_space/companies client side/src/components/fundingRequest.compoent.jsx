@@ -8,18 +8,18 @@ export default function funding() {
 
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center">
-                        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2 rectangleOne">
+                        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2">
                             <div className="p-3 statOne ">
-                                <h5 className="mb-0 whiteText">Funding Requests</h5>
-                                <div className="d-flex align-items-center">
-                                  <div className="d-flex mt-2 pb-3">
+                                <h5 className="mb-0 blackText">Funding Requests</h5>
+                                <div className="d-flex align-items-center ">
+                                  <div className="d-flex mt-2 pb-3 ">
                                     <a href="/" className="badge badge-primary ml-2">Incomplete <span className="badge badge-pill badge-light">6</span></a>
                                     <a href="/" className="badge badge-success ml-2">Successful <span className="badge badge-pill badge-light">5</span></a>
                                     <a href="/" className="badge badge-danger ml-2">Unsuccessful <span className="badge badge-pill badge-light">3</span></a>
                                   </div>
                                 </div>
 
-                                <table className="table table-striped whiteText">
+                                <table className="table table-striped whiteText blackText">
                                   <thead>
                                     <tr>
                                       <th scope="col">#</th>

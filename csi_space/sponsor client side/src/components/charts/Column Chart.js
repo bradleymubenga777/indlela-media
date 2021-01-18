@@ -6,7 +6,7 @@ class ColumnChart extends Component {
 		render() {
 		const options = {
 			title: {
-				text: "Funding Requests"
+				text: "Applications"
 			},
 			animationEnabled: true,
 			data: [
@@ -15,8 +15,8 @@ class ColumnChart extends Component {
 				type: "column",
 				dataPoints: [
 					{ label: "Incomplete",  y: 20  },
-					{ label: "Unsuccessful", y: 15  },
-					{ label: "Successful", y: 35  },
+					{ label: "Declined", y: 15  },
+					{ label: "Accepted", y: 35  },
 				]
 			}
 			]

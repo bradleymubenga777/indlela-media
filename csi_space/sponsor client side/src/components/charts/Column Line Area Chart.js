@@ -31,7 +31,7 @@ class ColumnLineAreaChart extends Component {
 			animationEnabled: true,
 			colorSet: "colorSet2",
 			title: {
-				text: "Revenue"
+				text: "Budget"
 			},
 			axisX: {
 				valueFormatString: "MMMM"
