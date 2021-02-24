@@ -1,15 +1,17 @@
 {
   "name": "indlela-media",
   "version": "1.0.0",
-  "description": "<h1>About</h1>\r Repository for the Indlela Media platform.",
+  "description": "<h1>About</h1> Repository for the Indlela Media platform.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bradleymubenga777/indlela-media.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -17,6 +19,14 @@
   },
   "homepage": "https://github.com/bradleymubenga777/indlela-media#readme",
   "dependencies": {
-    "bootstrap": "^4.5.3"
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
   }
 }

@@ -23,15 +23,15 @@ class App extends Component{
 
             <div class="container-fluid">
                 <div class="row">
-                    <SideBar />
+{/*                     <SideBar />
                     <Route exact path="/"  component={WelcomePage} />
                     <Route exact path="/sdashboard" component={Dashboard} />
-                    <Route exact path="/fundingRequests" component={FundingRequests} />
-                    <Route exact path="/sgrantListing" component={CsiNetwork} />
-                    <Route exact path="/smyProfile" component={MyProfile} />
+                    <Route exact path="/fundingRequests" component={FundingRequests} /> */}
+{/*                     <Route exact path="/sgrantListing" component={CsiNetwork} /> */}
+{/*                     <Route exact path="/smyProfile" component={MyProfile} /> */}
                     <Route exact path="/grantListTemplate" component={GrantTemplate} />
                     <Route exact path="/applicationListTemplate" component={ApplicationTemplate} />
-                    <Route exact path="/listingRequestId" component={listingRequest} />
+{/*                     <Route exact path="/listingRequestId" component={listingRequest} / */}
                 </div>
             </div>
 

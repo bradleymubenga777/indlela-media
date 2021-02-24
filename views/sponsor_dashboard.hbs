@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/csi.css">
+    <title>CSI Space | Company's</title>
+</head>
+<body>
+    <div class="row">
+        {{!-- Top Navbar --}}
+        <nav class="col-12 navbar navbar-dark sticky-top navbar-fixed flex-md-nowrap p-0 shadow">
+            <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3 text-center" href="/csi-space">
+                <img alt="" src=''width="115px" />
+            </a>
+
+            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <input class="form-control navbar" type="text" placeholder="Search" aria-label="Search" />
+            <ul class="navbar-nav px-3">
+              <li class="nav-item text-nowrap mr-4 ml-4">
+                <a class="nav-link" href="/"><i class="fa fa-bell-o"></i></a>
+              </li>
+            </ul>
+        </nav>
+
+        {{!-- Left Hand Column --}}
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+                <div class="sidebar-sticky pt-3 leftColumn">
+                    <div class="container text-center pt-3">
+                        <img alt="" class="img-fluid circleImg" src='' width="60px" />
+                    </div>
+
+                    <div class="text-center pt-3">
+                        <small class="lead"> {{ _USER.name }} </small><br />
+                        <small class="dashEmail"> {{ _USER.company_name }} </small>
+                    </div>
+
+                    <div class="pt-3">
+                        <ul>
+                            <div class="dashLink pb-3">
+                                <NavLink to="/sdashboard">
+                                    <i class="fa fa-bar-chart-o mr-1"></i>Dasboard
+                                </NavLink>
+                            </div>
+
+                            <div class="dashLink pb-3">
+                                <NavLink to="/sgrantListing">
+                                    <i class="fa fa-diamond mr-1"></i>Grant Listing
+                                </NavLink>
+                            </div>
+
+                            <div class="dashLink pb-3">
+                                <NavLink to="/sbugetingTools">
+                                    <i class="fa fa-address-book-o mr-1"></i>Budgeting Tools
+                                </NavLink>
+                            </div>
+
+                            <div class="dashLink pb-3">
+                                <NavLink to="/smyProfile">
+                                    <i class="fa fa-user-circle-o mr-1"></i>My Profile
+                                </NavLink>
+                            </div>
+
+                        </ul>
+                    </div>
+
+                    <div class="pt-1">
+                        <ul>
+                            <div class="dashLink pb-1">
+                                <NavLink to="/settings">
+                                    <i class="fa fa-cogs mr-1"></i>Settings
+                                </NavLink>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                    <div class="pt-1">
+                        <ul>
+                            <div class="dashLink pb-2">
+                                <a href="/">
+                                    <button class="btn btn-secondary">Log Out</button>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+
+        {{!-- Right Column --}}
+        <!--Welcome View-->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 p">
+                <div class="pt-3 pb-2 mb-3">
+                </div>
+
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2">
+                            <div class="statOne container">
+                                <h3 class="pt-3 text-center">Welcome!</h3>
+                                <p>Here is to changing the world! CSI Space creates an environment where Non-profit organisations find fast, easy and reliable access to funding and connect Corporate funders to relevant organisations at the same time. Upgrade to our premium package and get access to unlimited Funders and sponshorship requests. 
+                                </p>
+
+                                <div class="conntainer pb-3">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-12 text-center">
+                                            <img width="250rem"  src='' alt=""/>
+                                        </div>
+{{!-- 
+                                        <div class="col-6 text-center">
+                                            <button class="btn btn-lg btn-primary">Upgrade</button>
+                                        </div> --}}
+
+                                        <div class="col-6 text-center">
+                                          <button class="btn btn-lg btn-primary">Go to Dashboard</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <!--Dashboard View-->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 pt-5" id="csiNetwork">
+        <div class="pb-2 mb-3">
+        </div>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+
+                <div class="container-fluid col-sm-12 col-md-12 col-lg-3 m-2 col-xl-3">
+                    <div class="row ">
+                        <ColumnChart />
+
+                        <ColumnLineAreaChart />
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 m-2">
+                    <div class="p-3">
+                        <h5 class="border-bottom border-gray pb-2 mb-4 mb-0 blackText">Active Listings <span class="badge badge-pill badge-info">{{ _LISTING_LENGTH }}</span></h5>
+
+                        {{#if _LISTING}}
+                            {{#each _LISTING}}
+                                <div class="media text-muted pt-3 d-flex flex-column p-3 statOne ">
+                                    <div class="d-flex flex-row justify-content-center">
+                                    <p class="media-body pb-3 mb-0 small lh-125  border-gray blackText">
+                                        <strong class="d-block blackText">{{this.name_of_listing}}</strong>
+                                        {{this.description}}
+                                    </p>
+                                    </div>
+
+                                    <NavLink to="/grantListTemplate" class="btn btn-sm btn-primary mb-2">
+                                    Progress Report
+                                    </NavLink>
+                                </div>
+                            {{/each}}
+                        {{/if}}
+
+                        <small class="d-block text-right mt-3">
+                            <NavLink to="/csiNetwork" class="btn btn-primary mb-2">
+                            Read more
+                            </NavLink>
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </main>
+
+        <!--Funding Requests View-->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 pt-5" id="fundingRequest">
+        
+        <div class="pt-3 pb-2 mb-3">
+        </div>
+
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2 rectangleOne">
+                            <div class="p-3 statOne ">
+                                <h5 class="mb-0 whiteText">Funding Requests</h5>
+                                <div class="d-flex align-items-center">
+                                  <div class="d-flex mt-2 pb-3">
+                                    <a href="/" class="badge badge-primary ml-2">Incomplete <span class="badge badge-pill badge-light">6</span></a>
+                                    <a href="/" class="badge badge-success ml-2">Successful <span class="badge badge-pill badge-light">5</span></a>
+                                    <a href="/" class="badge badge-danger ml-2">Unsuccessful <span class="badge badge-pill badge-light">3</span></a>
+                                  </div>
+                                </div>
+
+                                <table class="table table-striped whiteText">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Company Name</th>
+                                      <th scope="col">Representative</th>
+                                      <th scope="col">Status</th>
+                                      <th scope="col">Status Info</th>
+                                    </tr>
+                                  </thead>
+
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Big Scal Invesments</td>
+                                      <td>Bradley Mubenga</td>
+                                      <td><span class="badge badge-primary">Incomplete</span></td>
+                                      <td>Please fill submit your company registration</td>
+                                    </tr>
+
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Munashe & Munashe Co.</td>
+                                      <td>Munashe</td>
+                                      <td><span class="badge badge-success">Successful</span></td>
+                                      <td class="w-50">Your funding application has been approved! Our colleges will be in contact with you.</td>
+                                    </tr>
+
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td>Larry & Harry Invesments</td>
+                                      <td>Larry Parry</td>
+                                      <td><span class="badge badge-danger">Unsuccessful</span></td>
+                                      <td class="w-50">Unfortunately your application was unsuccessful. Please consider doing A, B and C to improve your chances of getting funding.</td>
+                                    </tr>
+                                  </tbody>
+                              </table>
+
+                              </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <!--Grant Listings View-->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 pt-5" id="csiNetwork">
+            <div class="pt-3">
+            </div>
+
+            <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center">
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2 ">
+                            <div class="p-3 ">
+                                <h5 class="border-bottom border-gray pb-2 mb-0">Grant Listings <span class="badge badge-pill badge-info">{{ _LISTING_LENGTH }}</span></h5>
+                                <NavLink to="/listingRequestId" class="btn btn-primary mt-2 text-right"><i class="fa fa-plus"></i> New Listing</NavLink>
+                                    
+                                {{#if _LISTING}}
+                                    {{#each _LISTING}}
+                                        <div class="media text-muted pt-3 mt-2 statOne ">
+                                            <img src="" alt="" />
+                                            <div class="p-3">
+                                                <div class="d-flex">
+                                                    <h5 class="blackText">{{this.name_of_listing}}</h5>
+                                                    
+                                                    <div class="ml-2">
+                                                        <span class="badge badge-pill badge-success">Active</span>
+                                                    </div>
+                                                </div>
+
+                                                <p class="media-body pb-3 mb-0 small lh-125">
+                                                    {{this.description}}
+                                                </p>
+
+                                                <NavLink to="/grantListTemplate" class="btn btn-sm btn-primary mb-2">
+                                                    Progress Report
+                                                </NavLink>
+                                            </div>
+                                        </div>
+                                    {{/each}}
+                                {{/if}}
+
+
+                                <small class="d-block text-right mt-3">
+                                  <a href="/">More listings</a>
+                                </small>
+                              </div>
+                        </div>
+
+                    </div>
+            </div>
+        </main>
+
+        <!--My Pofile-->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 pt-5" id="csiNetwork">
+            <div class="pb-2 mb-3">
+            </div>
+
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center">
+
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 m-2">
+                        <div class="">
+                            <div class="media text-muted d-flex flex-column p-3 statOne ">
+                            <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                                <form action="upload" method="post" enctype="multipart/form-data">
+                                    <label for="fileToUpload">
+                                        <div class="profile-pic d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-camera"></i> <small class="ml-1"> Change Image</small>
+                                        </div>
+                                    </label>
+                                    <input type="File" name="profilePicture" id="fileToUpload" />
+                                </form>
+
+                                <div class="text-center blackText">
+                                    <small class="lead">Clone Bradley</small><br />
+                                    <small class="dashEmail">The Millionares Club</small>
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 m-2 statOne">
+                        <div class="p-3 ">
+                            <h5 class="border-bottom border-gray pb-2 mb-4 mb-0 blackText">My Profile <span class="badge badge-pill badge-info">2</span></h5>
+
+                            <div class="d-flex align-items-center justify-content-center">
+                            <div class="w-75 text-muted pt-3 mt-2 d-flex flex-column p-3">
+                                <form class="form-signin whiteText animate__animated animate__fadeInRight">
+
+                                    <label for="inputEmail" class="sr-only">Email address</label>
+                                    <h6 class="pt-2 blackText">Name</h6> 
+                                    <input type="text" id="inputEmail" class="form-control" value="Clone Bradley" required autofocus="" />
+                
+                                    <label for="inputEmail" class="sr-only">Email address</label>
+                                    <h6 class="pt-2 blackText">Company Name</h6> 
+                                    <input type="text" id="inputEmail" class="form-control" value="Millionares Club" required autofocus="" />
+                
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="container">
+                        <small class="d-block text-right mt-3 container">
+                                <a href="/">
+                                <button class="btn btn-primary mb-3">Save changes</button>
+                                </a>
+                        </small>
+                        </div>
+                    </div>
+
+                </div>
+        </main>
+
+        <!--Listing Request Form View-->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 pt-5" id="fundingRequest">
+
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2">
+                    <form action="/listing-create" method="POST" class="p-3 statOne blackText">
+                        <h4 class="mb-0 blackText">Create a new listing</h4>
+
+                        <div class="pt-4 w-75 ">
+                          <h6>Name Of Listing:</h6>
+                          <input name="name_of_listing" class="form-control mb-2" id="message" placeholder="eg. Sposorship For Charity Organisation." rows="1" required=""></input>                          
+
+                          <h6 class="mt-4">Description:</h6>
+                          <textarea name="description" class="form-control mb-2" id="message" placeholder="Describe your listing and your potential canditate." rows="5" required=""></textarea>
+
+
+                          <h6>Requirements:</h6>
+                          <textarea name="requirements" class="form-control mb-2" id="message" placeholder="Explain what is required of your potential candidate." rows="5" required=""></textarea>
+
+                            <h6 class="mb-2">CIPC Document?</h6>
+                            <select name="cipc" id="inputState" class="form-control mt-1 mb-3" required="">
+                                <option selected="">Choose...</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                            <h6 class="mb-2">SARS Document?</h6>
+                            <select name="sars" id="inputState" class="form-control mt-1 mb-3" required="">
+                                <option selected="">Choose...</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+
+                          <small class="d-block text-left mt-3 container">
+                              <button class="btn btn-primary" type="submit">Submit</button>
+                          </small>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        </main>
+
+    </div>
+</body>
+</html>
