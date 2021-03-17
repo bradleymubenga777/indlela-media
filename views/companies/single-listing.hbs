@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/csi.css">
+    <title>Document</title>
+</head>
+<body>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 pt-5" id="fundingRequest">
+
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2 ">
+                            <div class="p-3 statOne ">
+                                <h4 class="mb-0 blackText">Big Shot Investments</h4>
+
+                                <div class="pt-4 w-75 ">
+                                  <h5>{{LISTING_INFO.name_of_listing}}</h5>
+
+                                  <h6 class="mt-4">Description:</h6>
+                                  <p>{{LISTING_INFO.description}}</p>
+
+                                  <h6>Requirements:</h6>
+                                  <p>{{LISTING_INFO.requirements}}</p>
+
+                                  <h6>Required Documents</h6>
+                                  <p>Something dynamic here.</p>
+
+                                  <small class="d-block text-left mt-3 container">
+                                    <button class="btn btn-danger">Close Listing</button>
+                                  </small>
+                                </div>
+
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 m-2">
+                            <div class="p-3 statOne blackText">
+                                <h5 class="mb-0 blackText">Applications <span class="badge badge-pill badge-info">3</span></h5>
+                                <div class="d-flex align-items-center">
+                                  <div class="d-flex pb-3">
+                                  </div>
+                                </div>
+
+                                <table class="table table-striped blackText">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">NPO Name</th>
+                                      <th scope="col">Representative</th>
+                                      <th scope="col"></th>
+                                    </tr>
+                                  </thead>
+
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>The Mubenga Foundation</td>
+                                      <td>Bradley Mubenga</td>
+                                      <td>
+                                        <a href="/applicationListTemplate" class="badge badge-pill badge-info p-2">View Application</a>
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Munashe & Munashe Co.</td>
+                                      <td>Munashe</td>
+                                      <td>
+                                        <a href="/" class="badge badge-pill badge-info p-2">View Application</a>
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td>Larry & Harry Invesments</td>
+                                      <td>Larry Parry</td>
+                                      <td>
+                                        <a href="/" class="badge badge-pill badge-info p-2">View Application</a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                              </table>
+
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pt-3 pb-2 mb-3">
+                </div>
+
+                <div class="container">
+
+                </div>
+            </main>
+</body>
+</html>

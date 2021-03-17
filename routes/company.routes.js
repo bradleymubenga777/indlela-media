@@ -17,7 +17,8 @@ router.get('/:id', requireAuth, (req, res) => {
             connection.release(); //return connection to pool
 
             if (!err) {
-                res.send(rows);
+                let LISTING_INFO = rows[0];
+                res.render('companies/single-listing', { LISTING_INFO });
             }
 
             else {

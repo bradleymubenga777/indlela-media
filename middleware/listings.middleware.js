@@ -44,4 +44,25 @@ const getSponsorListings = (req, res, next) => {
 
 };
 
-module.exports = { getSponsorListings };
+//Get Individual Listing
+const getIndividualListing = (req, res, next) => {
+    pool.getConnection((err, connection) => {
+        if (err) throw err
+
+        //Query
+        connection.query('SELECT * FROM listings WHERE id = ?', [req.params.id], (err, rows) => {
+            connection.release(); //return connection to pool
+
+            if (!err) {
+                res.render('companies/single-listing')
+                res.locals.LISTING_INFO = rows[0];
+            }
+
+            else {
+                console.log(err);
+            }
+        });
+    });
+}
+
+module.exports = { getSponsorListings, getIndividualListing };

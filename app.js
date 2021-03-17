@@ -43,6 +43,6 @@ app.use('/auth', require('./routes/auth.routes'));
 app.use('/', require('./routes/company.routes'));
 
 //Listening To The PORT.
-app.listen(process.env.PORT || 5001, () => {
+app.listen(process.env.PORT || 5011, () => {
     console.log("Server Started On PORT: 5000");
 });
